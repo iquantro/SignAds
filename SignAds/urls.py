@@ -23,6 +23,9 @@ urlpatterns = [
     path('auth/',include('djoser.urls')),
     path('auth/',include('djoser.urls.jwt')),
 
+    #path to our AdRecords endpoints
+    path('record/', include("AdRecords.urls")),
+
     #path to our account's app endpoints
     path("api/accounts/",include("accounts.urls"))
 ]

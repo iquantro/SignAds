@@ -36,7 +36,7 @@ class userProfileTestCase(APITestCase):
 
     # populate the user profile that was automatically created using the signals
     def test_userprofile_profile(self):
-        profile_data={'description':'I am a very famous game character','location':'nintendo world','is_creator':'true',}
+        profile_data={'user_description':'I am a very famous game character','user_location':'nintendo world','is_creator':'true',}
         response=self.client.put(reverse('profile',kwargs={'pk':1}),data=profile_data)
         print(response.data)
         self.assertEqual(response.status_code,status.HTTP_200_OK)
