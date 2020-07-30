@@ -21,6 +21,3 @@ class CompanyProfile(models.Model):
     company_location = models.CharField(max_length=30,blank=True)
     company_description = models.TextField(blank=True, null=True)
     company = models.OneToOneField(User, on_delete=models.CASCADE)
-
-    def __str__(self):
-        return self.company.companyname
