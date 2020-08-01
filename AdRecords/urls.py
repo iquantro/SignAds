@@ -1,5 +1,5 @@
 from django.conf.urls import url
-from .views import ImageView,TextView
+from .views import ImageView, TextView
 
 urlpatterns = [
   	url(r'^upload-image/$', ImageView.as_view(), name='file-upload'),
