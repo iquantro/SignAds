@@ -2,11 +2,11 @@ from django.contrib.auth.models import User
 from django.db.models.signals import post_save
 from django.dispatch import receiver
 
-from .models import userProfile,CompanyProfile
+from .models import userProfile, AdvertiserProfile
 
 
 @receiver(post_save, sender=User)
 def create_profile(sender, instance, created, **kwargs):
     if created:
         userProfile.objects.create(user=instance)
-        CompanyProfile.objects.create(company=instance)
+        AdvertiserProfile.objects.create(company=instance)

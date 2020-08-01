@@ -1,36 +1,36 @@
-from rest_framework.generics import (ListCreateAPIView,RetrieveUpdateDestroyAPIView,)
+from rest_framework.generics import (ListCreateAPIView, RetrieveUpdateDestroyAPIView,)
 from rest_framework.permissions import IsAuthenticated
-from .models import userProfile,CompanyProfile
+from .models import userProfile, AdvertiserProfile
 from .permissions import IsOwnerProfileOrReadOnly
-from .serializers import userProfileSerializer,companyProfileSerializer
+from .serializers import userProfileSerializer, advertiserProfileSerializer
 
 # Create your views here.
 
 class UserProfileListCreateView(ListCreateAPIView):
-    queryset=userProfile.objects.all()
-    serializer_class=userProfileSerializer
-    permission_classes=[IsAuthenticated]
+    queryset = userProfile.objects.all()
+    serializer_class = userProfileSerializer
+    permission_classes = [IsAuthenticated]
 
     def perform_create(self, serializer):
-        user=self.request.user
+        user = self.request.user
         serializer.save(user=user)
 
-class CompanyProfileListCreateView(ListCreateAPIView):
-    queryset=CompanyProfile.objects.all()
-    serializer_class=companyProfileSerializer
-    permission_classes=[IsAuthenticated]
+class AdvertiserProfileListCreateView(ListCreateAPIView):
+    queryset = AdvertiserProfile.objects.all()
+    serializer_class = advertiserProfileSerializer
+    permission_classes = [IsAuthenticated]
 
     def perform_create(self, serializer):
-        company_val=self.request.company
-        serializer.save(company=company_val)
+        user = self.request.user
+        serializer.save(user=user)
 
 
 class userProfileDetailView(RetrieveUpdateDestroyAPIView):
-    queryset=userProfile.objects.all()
-    serializer_class=userProfileSerializer
-    permission_classes=[IsOwnerProfileOrReadOnly,IsAuthenticated]
+    queryset = userProfile.objects.all()
+    serializer_class = userProfileSerializer
+    permission_classes = [IsOwnerProfileOrReadOnly,IsAuthenticated]
 
-class companyProfileDetailView(RetrieveUpdateDestroyAPIView):
-    queryset=userProfile.objects.all()
-    serializer_class=companyProfileSerializer
-    permission_classes=[IsOwnerProfileOrReadOnly,IsAuthenticated]
+class advertiserProfileDetailView(RetrieveUpdateDestroyAPIView):
+    queryset = AdvertiserProfile.objects.all()
+    serializer_class = advertiserProfileSerializer
+    permission_classes = [IsOwnerProfileOrReadOnly,IsAuthenticated]
