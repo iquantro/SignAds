@@ -3,15 +3,12 @@ from rest_framework.parsers import MultiPartParser, FormParser, JSONParser
 from rest_framework.response import Response
 from rest_framework import status
 from .serializers import ImageSerializer,TextSerializer
-from rest_framework.permissions import IsAuthenticated
-from accounts.permissions import IsOwnerProfileOrReadOnly
 from .models import Image,Text
 from django.http import JsonResponse
 from .helpers import MultipleFiles
 
 class ImageView(APIView):
     parser_classes = (MultiPartParser, FormParser)
-    permission_classes = [IsAuthenticated, IsOwnerProfileOrReadOnly]
 
     def post(self, request, *args, **kwargs):
         image_property_id = request.data['image_property_id']
@@ -39,7 +36,6 @@ class ImageView(APIView):
 class TextView(APIView):
 
     parser_classes = [JSONParser]
-    permission_classes = [IsAuthenticated, IsOwnerProfileOrReadOnly]
 
     def post(self, request, *args, **kwargs):
         text_property_id = request.data['text_property_id']
