@@ -6,6 +6,7 @@ from .serializers import ImageSerializer,TextSerializer
 from .models import Image,Text
 from django.http import JsonResponse
 from .helpers import MultipleFiles
+from AdEngine.Engine import Engine
 
 class ImageView(APIView):
     parser_classes = (MultiPartParser, FormParser)
