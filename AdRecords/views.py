@@ -22,9 +22,9 @@ class ImageView(APIView):
             if image_serializer.is_valid():
                 image_serializer.save()
                 arr.append(image_serializer.data)
-                logo_status = Engine()
-                logo_engine_status = logo_status.logo_engine(request, image_property_id)
-                if logo_engine_status:
+                phase_one_status = Engine()
+                phase_one_engine_status = phase_one_status.phase_one_engine(request, image_property_id)
+                if phase_one_engine_status:
                     print("Logo engine successfully executed...")
             else:
                 flag = 0

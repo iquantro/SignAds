@@ -8,7 +8,7 @@ import os
 
 
 class Engine:
-    def logo_engine(self, request, image_property_id):
+    def phase_one_engine(self, request, image_property_id):
         image_engine_path_json = "E:/SignAds/AdEngine/paths.json"
         global advertiser, logo_description
         global dest, img_name
