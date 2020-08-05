@@ -9,9 +9,10 @@ import os
 
 class Engine:
     def logo_engine(self, request, image_property_id):
+        image_engine_path_json = "E:/SignAds/AdEngine/paths.json"
         global advertiser, logo_description
         global dest, img_name
-        with open("E:\SignAds\AdEngine\paths.json", "r") as rf:
+        with open(image_engine_path_json, "r") as rf:
             paths = json.load(rf)
         dest = paths['paths']['asset_destination_path']
         media_path = paths['paths']['media_dir_path']
