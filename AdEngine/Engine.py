@@ -2,6 +2,7 @@ from django.template import loader
 from AdRecords.models import Image
 from accounts.models import AdvertiserProfile
 from distutils.dir_util import copy_tree
+import shutil, os
 
 
 class Engine:
@@ -24,7 +25,7 @@ class Engine:
         for ad_name in ad_info:
             advertiser = ad_name.advertiser_name
 
-        copy_tree(media_path, dest)
+        shutil.copy(media_path+img_name, dest)
         image_location = asset_str+img_name
         template = loader.get_template('AdTemplates/demo/demo.html')
         context = {
@@ -38,5 +39,7 @@ class Engine:
         copy_tree(src, ad_dest)
         with open('{0}/demo.html'.format(ad_dest), 'w') as f:
             f.write(phase_one_ad)
+
+        os.remove(src+'/'+asset_str+img_name)
 
         return True

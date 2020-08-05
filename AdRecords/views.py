@@ -2,8 +2,8 @@ from rest_framework.views import APIView
 from rest_framework.parsers import MultiPartParser, FormParser, JSONParser
 from rest_framework.response import Response
 from rest_framework import status
-from .serializers import ImageSerializer,TextSerializer
-from .models import Image,Text
+from .serializers import ImageSerializer, TextSerializer
+from .models import Image, Text
 from django.http import JsonResponse
 from .helpers import MultipleFiles
 from AdEngine.Engine import Engine
