@@ -27,5 +27,8 @@ urlpatterns = [
     path('record/', include("AdRecords.urls")),
 
     #path to our account's app endpoints
-    path("api/accounts/", include("accounts.urls"))
+    path("api/accounts/", include("accounts.urls")),
+
+    #path to CLient api endpoint
+    path("api/v1/", include("ClientApi.urls"))
 ]
