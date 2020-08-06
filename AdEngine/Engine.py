@@ -9,7 +9,7 @@ import os
 
 class Engine:
     def phase_one_engine(self, request, image_property_id):
-        image_engine_path_json = "E:/SignAds/AdEngine/paths.json"
+        image_engine_path_json = "/home/nithin/Startup/SignAds/AdEngine/paths.json"
         global advertiser, logo_description
         global dest, img_name
         with open(image_engine_path_json, "r") as rf:
