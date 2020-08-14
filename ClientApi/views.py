@@ -1,7 +1,5 @@
 from rest_framework.views import APIView
-from rest_framework.response import Response
 from django.shortcuts import render
-from django.template import loader
 
 
 class AdService(APIView):
