@@ -25,7 +25,10 @@ class ImageView(APIView):
                 phase_one_status = Engine()
                 phase_one_engine_status = phase_one_status.phase_one_engine(request, image_property_id)
                 if phase_one_engine_status:
-                    print("Logo engine successfully executed...")
+                    print("Phase one engine successfully executed...")
+                phase_two_engine_status = phase_one_status.phase_two_engine(request, image_property_id)
+                if phase_two_engine_status:
+                    print("Phase two engine successfully executed...")
             else:
                 flag = 0
         if flag == 1:
