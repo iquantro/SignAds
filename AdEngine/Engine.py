@@ -50,20 +50,12 @@ class Engine:
         with open('{0}/demo.html'.format(ad_dest), 'w') as f:
             f.write(phase_one_ad)
 
-        #os.remove(src + '/' + asset_str + img_name)
-
         return True
 
     def phase_two_engine(self, request, image_property_id):
 
         VideoEngine.converter(image_property_id, advertiser, advertiser_desc)
-        '''
-        videofile = paths["paths"]["video_abs_path"].split("/")[2]
-        audiofile = paths["paths"]["mp3_abs_path"].split("/")[3]
-        video_stream = ffmpeg.input(videofile)
-        audio_stream = ffmpeg.input(audiofile)
-        ffmpeg.output(audio_stream, video_stream, 'out.avi').run()
-        '''
+
         return True
 
 
