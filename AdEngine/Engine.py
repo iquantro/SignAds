@@ -7,17 +7,14 @@ import json
 import os
 import cv2
 from os.path import isfile, join
-import moviepy.editor as mpe
-import ffmpeg
-import subprocess
 import time
-
+from Video_Engine.VideoEngine import VideoEngine
 
 class Engine:
     def phase_one_engine(self, request, image_property_id):
         global image_engine_path_json
-        image_engine_path_json = "E:/SignAds/AdEngine/paths.json"
-        global advertiser, logo_description
+        image_engine_path_json = "/SignAds/AdEngine/paths.json"
+        global advertiser, logo_description, advertiser_desc
         global dest, img_name
         with open(image_engine_path_json, "r") as rf:
             paths = json.load(rf)
@@ -36,6 +33,7 @@ class Engine:
             logo_description = desc_val
         for ad_name in ad_info:
             advertiser = ad_name.advertiser_name
+            advertiser_desc = ad_name.advertiser_description
 
         shutil.copy(media_path + img_name, dest)
         image_location = asset_str + img_name
@@ -52,47 +50,13 @@ class Engine:
         with open('{0}/demo.html'.format(ad_dest), 'w') as f:
             f.write(phase_one_ad)
 
-        os.remove(src + '/' + asset_str + img_name)
+        #os.remove(src + '/' + asset_str + img_name)
 
         return True
 
     def phase_two_engine(self, request, image_property_id):
 
-        image_path_list = []
-        image_description_list = []
-        capture_time = 15
-        video_fps = 20.0
-        with open(image_engine_path_json, "r") as rf:
-            paths = json.load(rf)
-
-        media_path_in = paths['paths']['media_dir_path']
-        media_path_out = paths['paths']['media_path_out']
-        image_id_info = Image.objects.filter(image_property_id=image_property_id)
-        for image_val in image_id_info:
-            image_path_list.append(image_val.image.path)
-            image_description_list.append(image_val.image_description)
-            img_name = str(image_val.image)
-        frame_array = []
-        files = [f for f in os.listdir(media_path_in) if isfile(join(media_path_in, f))]
-        # for sorting the file names properly
-        files.sort(key=lambda x: x[5:-4])
-        files.sort()
-        frame_array = []
-        files = [f for f in os.listdir(media_path_in) if isfile(join(media_path_in, f))]
-        # for sorting the file names properly
-        files.sort(key=lambda x: x[5:-4])
-        for i in range(len(files)):
-            filename = media_path_in+img_name
-            img = cv2.imread(filename)
-            height, width, layers = img.shape
-            size = (width, height)
-            frame_array.append(img)
-        out = cv2.VideoWriter(media_path_out, cv2.VideoWriter_fourcc(*'DIVX'), video_fps, size)
-        start_time = time.time()
-        while int(time.time() - start_time) < capture_time:
-            for i in range(len(frame_array)):
-                out.write(frame_array[i])
-        out.release()
+        VideoEngine.converter(image_property_id, advertiser, advertiser_desc)
         '''
         videofile = paths["paths"]["video_abs_path"].split("/")[2]
         audiofile = paths["paths"]["mp3_abs_path"].split("/")[3]

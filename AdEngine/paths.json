@@ -1,12 +1,12 @@
   {
     "paths": {
-      "media_dir_path": "E:/SignAds/media/",
+      "media_dir_path": "/home/nithin/Startup/SignAds/media/",
       "relative_assets_dir_path": "assets/",
-      "asset_destination_path": "E:/SignAds/AdRecords/templates/AdTemplates/demo/assets/",
+      "asset_destination_path": "/home/nithin/Startup/SignAds/AdRecords/templates/AdTemplates/demo/assets/",
       "relative_template_html_file_path": "AdTemplates/demo/demo.html",
       "relative_template_dir_path": "AdRecords/templates/AdTemplates/demo",
       "media_path_out": "video.avi",
-      "video_abs_path": "E:/SignAds/video.avi",
-      "mp3_abs_path": "E:/SignAds/mp3_files/audio.aac"
+      "video_abs_path": "/home/nithin/Startup/SignAds/video.avi",
+      "mp3_abs_path": "/home/nithin/Startup/SignAds/mp3_files/audio.aac"
     }
   }

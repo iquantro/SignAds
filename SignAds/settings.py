@@ -43,7 +43,8 @@ INSTALLED_APPS = [
     'rest_framework_simplejwt',
     'rest_framework',
     'ClientApi',
-    'AdAssets'
+    'AdAssets',
+    'Video_Engine'
 ]
 
 MIDDLEWARE = [
