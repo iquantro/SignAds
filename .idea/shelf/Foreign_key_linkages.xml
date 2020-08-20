@@ -1,0 +1,14 @@
+<changelist name="Foreign_key_linkages" date="1596092778874" recycled="false">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Foreign_key_linkages/shelved.patch" />
+  <option name="DESCRIPTION" value="Foreign_key_linkages" />
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="media/offer_page4-min.jpg" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Foreign_key_linkages/offer_page4-min.jpg" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="db.sqlite3" />
+    <option name="AFTER_PATH" value="db.sqlite3" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Foreign_key_linkages/db.sqlite3" />
+  </binary>
+</changelist>

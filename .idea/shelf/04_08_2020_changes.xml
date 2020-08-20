@@ -1,0 +1,24 @@
+<changelist name="04_08_2020_changes" date="1596518268934" recycled="false">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/04_08_2020_changes/shelved.patch" />
+  <option name="DESCRIPTION" value="04_08_2020_changes" />
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="media/offer_page4-min_Sy1cDgU.jpg" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/04_08_2020_changes/offer_page4-min_Sy1cDgU.jpg" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="media/offer_page4-min_UpzbXwb.jpg" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/04_08_2020_changes/offer_page4-min_UpzbXwb.jpg" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="media/offer_page4-min_zBQDczy.jpg" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/04_08_2020_changes/offer_page4-min_zBQDczy.jpg" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="db.sqlite3" />
+    <option name="AFTER_PATH" value="db.sqlite3" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/04_08_2020_changes/db.sqlite3" />
+  </binary>
+</changelist>

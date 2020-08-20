@@ -1,0 +1,29 @@
+<changelist name="changes_03_08_demo_render_error_template_not_found" date="1596448410568" recycled="false">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/changes_03_08_demo_render_error_template_not_found/shelved.patch" />
+  <option name="DESCRIPTION" value="changes_03_08_demo_render_error_template_not_found" />
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="media/offer_page4-min.jpg" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/changes_03_08_demo_render_error_template_not_found/offer_page4-min.jpg" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="templates/AdTemplates/demo/assets/img-teapot.png" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/changes_03_08_demo_render_error_template_not_found/img-teapot.png" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="templates/AdTemplates/demo/gwd_preview_demo/favicon.ico" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/changes_03_08_demo_render_error_template_not_found/favicon.ico" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="templates/AdTemplates/demo/gwd_preview_demo/img-teapot.png" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/changes_03_08_demo_render_error_template_not_found/img-teapot1.png" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="db.sqlite3" />
+    <option name="AFTER_PATH" value="db.sqlite3" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/changes_03_08_demo_render_error_template_not_found/db.sqlite3" />
+  </binary>
+</changelist>

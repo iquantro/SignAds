@@ -1,0 +1,74 @@
+<changelist name="AdTemplate_engine_fix_template_issue" date="1596459542454" recycled="false">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/AdTemplate_engine_fix_template_issue/shelved.patch" />
+  <option name="DESCRIPTION" value="AdTemplate engine fix template issue" />
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="AdRecords/templates/AdTemplates/demo/assets/img-teapot.png" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/AdTemplate_engine_fix_template_issue/img-teapot.png" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="AdRecords/templates/AdTemplates/demo/gwd_preview_demo/favicon.ico" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/AdTemplate_engine_fix_template_issue/favicon.ico" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="AdRecords/templates/AdTemplates/demo/gwd_preview_demo/img-teapot.png" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/AdTemplate_engine_fix_template_issue/img-teapot1.png" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="media/offer_page4-min.jpg" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/AdTemplate_engine_fix_template_issue/offer_page4-min.jpg" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="media/offer_page4-min_2qDTTLI.jpg" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/AdTemplate_engine_fix_template_issue/offer_page4-min_2qDTTLI.jpg" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="media/offer_page4-min_2RRi0dl.jpg" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/AdTemplate_engine_fix_template_issue/offer_page4-min_2RRi0dl.jpg" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="media/offer_page4-min_eWKZ9Uc.jpg" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/AdTemplate_engine_fix_template_issue/offer_page4-min_eWKZ9Uc.jpg" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="media/offer_page4-min_ghGZl8U.jpg" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/AdTemplate_engine_fix_template_issue/offer_page4-min_ghGZl8U.jpg" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="media/offer_page4-min_IHxm8BA.jpg" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/AdTemplate_engine_fix_template_issue/offer_page4-min_IHxm8BA.jpg" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="media/offer_page4-min_KWt9isR.jpg" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/AdTemplate_engine_fix_template_issue/offer_page4-min_KWt9isR.jpg" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="media/offer_page4-min_luigPNr.jpg" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/AdTemplate_engine_fix_template_issue/offer_page4-min_luigPNr.jpg" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="media/offer_page4-min_q0v3Ss3.jpg" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/AdTemplate_engine_fix_template_issue/offer_page4-min_q0v3Ss3.jpg" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="media/offer_page4-min_uifLPp5.jpg" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/AdTemplate_engine_fix_template_issue/offer_page4-min_uifLPp5.jpg" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="db.sqlite3" />
+    <option name="AFTER_PATH" value="db.sqlite3" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/AdTemplate_engine_fix_template_issue/db.sqlite3" />
+  </binary>
+</changelist>

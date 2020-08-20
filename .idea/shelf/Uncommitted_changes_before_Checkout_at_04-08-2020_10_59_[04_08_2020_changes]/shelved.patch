@@ -1,0 +1,34 @@
+Index: AdRecords/views.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>from rest_framework.views import APIView\r\nfrom rest_framework.parsers import MultiPartParser, FormParser, JSONParser\r\nfrom rest_framework.response import Response\r\nfrom rest_framework import status\r\nfrom .serializers import ImageSerializer,TextSerializer\r\nfrom .models import Image,Text\r\nfrom django.http import JsonResponse\r\nfrom .helpers import MultipleFiles\r\n\r\nclass ImageView(APIView):\r\n    parser_classes = (MultiPartParser, FormParser)\r\n\r\n    def post(self, request, *args, **kwargs):\r\n        image_property_id = request.data['image_property_id']\r\n        images = dict((request.data).lists())['image']\r\n        flag = 1\r\n        arr = []\r\n        for img_name in images:\r\n            modified_data = MultipleFiles.modify_image(image_property_id, img_name)\r\n            image_serializer = ImageSerializer(data=modified_data)\r\n            if image_serializer.is_valid():\r\n                image_serializer.save()\r\n                arr.append(image_serializer.data)\r\n            else:\r\n                flag = 0\r\n        if flag == 1:\r\n            return Response(arr, status=status.HTTP_201_CREATED)\r\n        else:\r\n            return Response(arr, status=status.HTTP_400_BAD_REQUEST)\r\n\r\n    def get(self, request):\r\n        all_images = Image.objects.all()\r\n        serializer = ImageSerializer(all_images, many=True)\r\n        return JsonResponse(serializer.data, safe=False)\r\n\r\nclass TextView(APIView):\r\n\r\n    parser_classes = [JSONParser]\r\n\r\n    def post(self, request, *args, **kwargs):\r\n        text_property_id = request.data['text_property_id']\r\n        texts = request.data['text']\r\n        flag = 1\r\n        arr = []\r\n\r\n        modified_data = MultipleFiles.modify_text(text_property_id, texts)\r\n        text_serializer = TextSerializer(data=modified_data)\r\n        if text_serializer.is_valid():\r\n            text_serializer.save()\r\n            arr.append(text_serializer.data)\r\n        else:\r\n            flag = 0\r\n        if flag == 1:\r\n            return Response(arr, status=status.HTTP_201_CREATED)\r\n        else:\r\n            return Response(arr, status=status.HTTP_400_BAD_REQUEST)\r\n\r\n\r\n    def get(self, request):\r\n        all_texts = Text.objects.all()\r\n        serializer = TextSerializer(all_texts, many=True)\r\n        return JsonResponse(serializer.data, safe=False)\r\n\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- AdRecords/views.py	(revision adad54362b7e958cfa09fb31e2bf31c80e73b398)
++++ AdRecords/views.py	(date 1596518346105)
+@@ -2,10 +2,11 @@
+ from rest_framework.parsers import MultiPartParser, FormParser, JSONParser
+ from rest_framework.response import Response
+ from rest_framework import status
+-from .serializers import ImageSerializer,TextSerializer
+-from .models import Image,Text
++from .serializers import ImageSerializer, TextSerializer
++from .models import Image, Text
+ from django.http import JsonResponse
+ from .helpers import MultipleFiles
++from AdEngine.Engine import Engine
+ 
+ class ImageView(APIView):
+     parser_classes = (MultiPartParser, FormParser)
+@@ -21,6 +22,10 @@
+             if image_serializer.is_valid():
+                 image_serializer.save()
+                 arr.append(image_serializer.data)
++                logo_status = Engine()
++                logo_engine_status = logo_status.logo_engine(request, image_property_id)
++                if logo_engine_status:
++                    print("Logo engine successfully executed...")
+             else:
+                 flag = 0
+         if flag == 1:

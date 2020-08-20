@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2ef4fa56-c350-4b3e-af96-e1a9e77a8a9f" name="Default Changelist" comment="video engine object initialization" />
+    <list id="d13bbe7a-cb81-4d00-8e8c-972a4c8cc096" name="04_08_2020_changes" comment="Logo generation engine class." />
+    <list id="b8aeefef-67c1-4f7a-a21c-b9976c97da04" name="AdTemplate engine fix template issue" comment="AdTemplate engine fix template issue" />
+    <list id="d5318926-3468-4752-b429-867135c80ac9" name="Customer Account record addition" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="Bug_fix_repo" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1fEGbRWibfxYCdKJUSbthsvoVOu" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="TODO_SCOPE" value="All Places" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../AgeDetection" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="vcs.patch.path" value="$USER_HOME$/Downloads" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\SignAds\AdRecords\templates" />
+      <recent name="E:\SignAds\templates" />
+      <recent name="E:\SignAds" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2ef4fa56-c350-4b3e-af96-e1a9e77a8a9f" name="Default Changelist" comment="" />
+      <changelist id="d5318926-3468-4752-b429-867135c80ac9" name="Customer Account record addition" comment="" />
+      <changelist id="b8aeefef-67c1-4f7a-a21c-b9976c97da04" name="AdTemplate engine fix template issue" comment="" />
+      <changelist id="d13bbe7a-cb81-4d00-8e8c-972a4c8cc096" name="04_08_2020_changes" comment="" />
+      <created>1595775910016</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1595775910016</updated>
+    </task>
+    <task id="LOCAL-00001" summary="settings file rest_framework extra appearance removal.">
+      <created>1595776444729</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1595776444729</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Customer Account record addition.">
+      <created>1595776612369</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1595776612369</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Image upload advertiser addition changes 1.">
+      <created>1595858124857</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1595858124858</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Image &amp; Text functionality for data records">
+      <created>1596008560251</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1596008560252</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Foreign_key_linkages">
+      <created>1596092779406</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1596092779406</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Foreign_key_linkages between property ids and user.">
+      <created>1596098079569</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1596098079569</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Change for advertiserProfile and foreign key insertions">
+      <created>1596266442723</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1596266442724</updated>
+    </task>
+    <task id="LOCAL-00008" summary="UserProfile and AdvertiserProfile modifications without permissions">
+      <created>1596301149006</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1596301149006</updated>
+    </task>
+    <task id="LOCAL-00009" summary="02_08_2020_shelved">
+      <created>1596351956981</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1596351956981</updated>
+    </task>
+    <task id="LOCAL-00010" summary="changes_03_08_demo_render_error_template_not_found">
+      <created>1596448412046</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1596448412046</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Temporary removal of permissions.">
+      <created>1596448649961</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1596448649961</updated>
+    </task>
+    <task id="LOCAL-00012" summary="AdTemplate engine fix template issue">
+      <created>1596459544388</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1596459544390</updated>
+    </task>
+    <task id="LOCAL-00013" summary="AdTemplate engine fix template issue">
+      <created>1596459713337</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1596459713337</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Missing Required positional argument 'image_property_id'">
+      <created>1596475490638</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1596475490639</updated>
+    </task>
+    <task id="LOCAL-00015" summary="04_08_2020_changes">
+      <created>1596518269505</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1596518269507</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Logo generation engine class.">
+      <created>1596519523485</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1596519523486</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Logo generation engine class.">
+      <created>1596521169220</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1596521169222</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Logo generation engine class import">
+      <created>1596521250330</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1596521250330</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Logo generation template files">
+      <created>1596521722323</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1596521722323</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Logo generation on template working">
+      <created>1596545385004</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1596545385004</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Removing template directory population and single image addition.">
+      <created>1596614277705</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1596614277706</updated>
+    </task>
+    <task id="LOCAL-00022" summary="JSON path access">
+      <created>1596623807553</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1596623807554</updated>
+    </task>
+    <task id="LOCAL-00023" summary="JSON path">
+      <created>1596624864860</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1596624864860</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Renaming engine to PhaseOne">
+      <created>1596626115659</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1596626115659</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Requirements_latest_05-08">
+      <created>1596638868179</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1596638868179</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Engine init file">
+      <created>1596725434897</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1596725434897</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Removal of commented lines">
+      <created>1597388196166</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1597388196166</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Removal of unnecessary libraries">
+      <created>1597388255325</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1597388255325</updated>
+    </task>
+    <task id="LOCAL-00029" summary="19/08/2020">
+      <created>1597848585230</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1597848585231</updated>
+    </task>
+    <task id="LOCAL-00030" summary="removing unnecessary ffmpeg logic commented.">
+      <created>1597848790869</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1597848790869</updated>
+    </task>
+    <task id="LOCAL-00031" summary="video engine cleanup">
+      <created>1597849390532</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1597849390532</updated>
+    </task>
+    <task id="LOCAL-00032" summary="paths cleanup">
+      <created>1597849823205</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1597849823205</updated>
+    </task>
+    <task id="LOCAL-00033" summary="video engine object initialization">
+      <created>1597899347659</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1597899347659</updated>
+    </task>
+    <task id="LOCAL-00034" summary="20/08/2020">
+      <created>1597901632999</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1597901632999</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="UserProfile and AdvertiserProfile modifications without permissions" />
+    <MESSAGE value="02_08_2020_shelved" />
+    <MESSAGE value="changes_03_08_demo_render_error_template_not_found" />
+    <MESSAGE value="Temporary removal of permissions." />
+    <MESSAGE value="AdTemplate engine fix template issue" />
+    <MESSAGE value="Missing Required positional argument 'image_property_id'" />
+    <MESSAGE value="04_08_2020_changes" />
+    <MESSAGE value="Logo generation engine class." />
+    <MESSAGE value="Logo generation engine class import" />
+    <MESSAGE value="Logo generation template files" />
+    <MESSAGE value="Logo generation on template working" />
+    <MESSAGE value="Removing template directory population and single image addition." />
+    <MESSAGE value="JSON path access" />
+    <MESSAGE value="JSON path" />
+    <MESSAGE value="Renaming engine to PhaseOne" />
+    <MESSAGE value="Requirements_latest_05-08" />
+    <MESSAGE value="Engine init file" />
+    <MESSAGE value="Removal of commented lines" />
+    <MESSAGE value="Removal of unnecessary libraries" />
+    <MESSAGE value="19/08/2020" />
+    <MESSAGE value="removing unnecessary ffmpeg logic commented." />
+    <MESSAGE value="video engine cleanup" />
+    <MESSAGE value="paths cleanup" />
+    <MESSAGE value="video engine object initialization" />
+    <MESSAGE value="20/08/2020" />
+    <option name="LAST_COMMIT_MESSAGE" value="20/08/2020" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="254" y="85" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596543918206">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="254" y="85" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1600.860@0.0.1600.860" timestamp="1596543918206" />
+    <state x="559" y="231" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1597899092405">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="559" y="231" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1600.860@0.0.1600.860" timestamp="1597899092405" />
+    <state x="868" y="176" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1596520715261">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="868" y="176" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1600.860@0.0.1600.860" timestamp="1596520715261" />
+    <state x="546" y="0" key="CommitChangelistDialog2" timestamp="1597901633005">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="546" y="0" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1597901633005" />
+    <state x="92" y="92" width="1416" height="676" key="DiffContextDialog" timestamp="1597899379493">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="92" y="92" width="1416" height="676" key="DiffContextDialog/0.0.1600.860@0.0.1600.860" timestamp="1597899379493" />
+    <state x="580" y="184" key="FileChooserDialogImpl" timestamp="1597817854964">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="580" y="184" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1597817854964" />
+    <state x="152" y="68" key="MergeDialog" timestamp="1596519248237">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="152" y="68" key="MergeDialog/0.0.1600.860@0.0.1600.860" timestamp="1596519248237" />
+    <state x="614" y="132" key="RollbackChangesDialog" timestamp="1596725304886">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="614" y="132" key="RollbackChangesDialog/0.0.1600.860@0.0.1600.860" timestamp="1596725304886" />
+    <state x="301" y="74" key="SettingsEditor" timestamp="1596471286278">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="301" y="74" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1596471286278" />
+    <state x="593" y="127" key="VCS.ChangeListViewerDialog" timestamp="1596098666242">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="593" y="127" key="VCS.ChangeListViewerDialog/0.0.1600.860@0.0.1600.860" timestamp="1596098666242" />
+    <state x="392" y="162" key="Vcs.Push.Dialog.v2" timestamp="1597899377200">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="392" y="162" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1597899377200" />
+    <state x="609" y="343" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1596459570573">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="609" y="343" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1600.860@0.0.1600.860" timestamp="1596459570573" />
+    <state x="506" y="163" width="587" height="534" key="find.popup" timestamp="1597894852297">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="506" y="163" width="587" height="534" key="find.popup/0.0.1600.860@0.0.1600.860" timestamp="1597894852297" />
+    <state x="580" y="142" key="git4idea.branch.GitSmartOperationDialog" timestamp="1596518982505">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="580" y="142" key="git4idea.branch.GitSmartOperationDialog/0.0.1600.860@0.0.1600.860" timestamp="1596518982505" />
+    <state x="530" y="218" key="git4idea.merge.GitPullDialog" timestamp="1597901788808">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="530" y="218" key="git4idea.merge.GitPullDialog/0.0.1600.860@0.0.1600.860" timestamp="1597901788808" />
+    <state x="583" y="310" width="467" height="243" key="org.intellij.images.editor.actions.BackgroundImageDialog" timestamp="1596032175145">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="583" y="310" width="467" height="243" key="org.intellij.images.editor.actions.BackgroundImageDialog/0.0.1600.860@0.0.1600.860" timestamp="1596032175145" />
+    <state x="456" y="83" width="672" height="676" key="search.everywhere.popup" timestamp="1597895106463">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="456" y="83" width="672" height="676" key="search.everywhere.popup/0.0.1600.860@0.0.1600.860" timestamp="1597895106463" />
+    <state x="444" y="130" key="vcs.ApplyPatchDifferentiatedDialog" timestamp="1596521541576">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="444" y="130" key="vcs.ApplyPatchDifferentiatedDialog/0.0.1600.860@0.0.1600.860" timestamp="1596521541576" />
+  </component>
+</project>
