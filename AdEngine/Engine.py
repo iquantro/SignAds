@@ -4,16 +4,12 @@ from accounts.models import AdvertiserProfile
 from distutils.dir_util import copy_tree
 import shutil
 import json
-import os
-import cv2
-from os.path import isfile, join
-import time
 from Video_Engine.VideoEngine import VideoEngine
 
 class Engine:
     def phase_one_engine(self, request, image_property_id):
         global image_engine_path_json
-        image_engine_path_json = "/SignAds/AdEngine/paths.json"
+        image_engine_path_json = "E:/SignAds/AdEngine/paths.json"
         global advertiser, logo_description, advertiser_desc
         global dest, img_name
         with open(image_engine_path_json, "r") as rf:
@@ -53,8 +49,11 @@ class Engine:
         return True
 
     def phase_two_engine(self, request, image_property_id):
-
-        VideoEngine.converter(image_property_id, advertiser, advertiser_desc)
+        ad_info = AdvertiserProfile.objects.all()
+        advertiser_desc_val = [str(ad_name.advertiser_description) for ad_name in ad_info][0]
+        advertiser_val = [str(ad_name.advertiser_name) for ad_name in ad_info][0]
+        video_engine_object = VideoEngine()
+        video_engine_object.converter(image_property_id, advertiser_val, advertiser_desc_val)
 
         return True
 
