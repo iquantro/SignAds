@@ -44,7 +44,8 @@ INSTALLED_APPS = [
     'rest_framework',
     'ClientApi',
     'AdAssets',
-    'Video_Engine'
+    'Video_Engine',
+    'NeuralNetEngine'
 ]
 
 MIDDLEWARE = [
