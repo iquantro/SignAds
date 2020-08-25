@@ -7,6 +7,7 @@ from .models import Image, Text
 from django.http import JsonResponse
 from .helpers import MultipleFiles
 from AdEngine.Engine import Engine
+from NeuralNetEngine.generate import TextGen
 
 class ImageView(APIView):
     parser_classes = (MultiPartParser, FormParser)
