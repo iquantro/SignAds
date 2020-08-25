@@ -1,10 +1,11 @@
 from django.template import loader
-from AdRecords.models import Image
+from AdRecords.models import Image, Text
 from accounts.models import AdvertiserProfile
 from distutils.dir_util import copy_tree
 import shutil
 import json
 from Video_Engine.VideoEngine import VideoEngine
+from NeuralNetEngine.generate import TextGen
 
 class Engine:
     def phase_one_engine(self, request, image_property_id):
@@ -45,7 +46,6 @@ class Engine:
         copy_tree(src, ad_dest)
         with open('{0}/demo.html'.format(ad_dest), 'w') as f:
             f.write(phase_one_ad)
-
         return True
 
     def phase_two_engine(self, request, image_property_id):
@@ -54,7 +54,13 @@ class Engine:
         advertiser_val = [str(ad_name.advertiser_name) for ad_name in ad_info][0]
         video_engine_object = VideoEngine()
         video_engine_object.converter(image_property_id, advertiser_val, advertiser_desc_val)
-
         return True
 
+    def phase_three_engine(self, request, text_property_id):
+        text_id_info = Text.objects.filter(text_property_id=text_property_id)
+        text_val = [str(text_value.text_description) for text_value in text_id_info][0]
+        # emotional text generation engine
+        text_gen_object = TextGen()
+        text_gen_object.textgenerator(request, text_val, text_property_id)
+        return True
 
