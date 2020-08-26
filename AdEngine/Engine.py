@@ -58,7 +58,7 @@ class Engine:
 
     def phase_three_engine(self, request, text_property_id):
         text_id_info = Text.objects.filter(text_property_id=text_property_id)
-        text_val = [str(text_value.text_description) for text_value in text_id_info][0]
+        text_val = [str(text_value.text) for text_value in text_id_info][0]
         # emotional text generation engine
         text_gen_object = TextGen()
         text_gen_object.textgenerator(request, text_val, text_property_id)
