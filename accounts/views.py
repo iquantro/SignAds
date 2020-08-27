@@ -1,11 +1,10 @@
 from rest_framework.permissions import IsAuthenticated
-from .models import userProfile, AdvertiserProfile
+from .models import userProfile, AdvertiserProfile, PhaseDB
 from .permissions import IsOwnerProfileOrReadOnly
-from .serializers import userProfileSerializer, advertiserProfileSerializer
+from .serializers import userProfileSerializer, advertiserProfileSerializer, PhaseDBSerializer
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
-
 # Create your views here.   `
 
 class UserView(APIView):
@@ -43,3 +42,11 @@ class AdvertiserView(APIView):
             serializer = advertiserProfileSerializer(advertiser_data)
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+class PhaseView(APIView):
+    serializer_class = PhaseDBSerializer
+
+    def get(self, request, *args, **kwargs):
+        all_phase_data = PhaseDB.objects.all()
+        serializer = PhaseDBSerializer(all_phase_data, many=True)
+        return Response(serializer.data)
