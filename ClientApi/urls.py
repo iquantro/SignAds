@@ -1,8 +1,6 @@
 from django.conf.urls import url
-from .views import AdService, PhaseTwo, PhaseThree
+from .views import FetchAsset
 
 urlpatterns = [
-    url(r'^Adservice', AdService.as_view(), name='ClientApi'),
-    url(r'^PhaseTwo', PhaseTwo.as_view(), name='PhaseTwo'),
-    url(r'^PhaseThree', PhaseThree.as_view(), name='PhaseThree'),
+    url(r'^FetchAsset', FetchAsset.as_view(), name='FetchAsset'),
 ]
