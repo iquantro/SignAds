@@ -2,12 +2,12 @@ from AdRecords.models import Text
 from accounts.models import AdvertiserProfile, PhaseDB, userProfile
 from Video_Engine.VideoEngine import VideoEngine
 from NeuralNetEngine.generate import TextGen
-from FlippingEngine.phase_one import FlippingEngine
+from BlippingEngine.phase_one import BlippingEngine
 
 class Engine:
     def phase_one_engine(self, request, image_property_id):
-        phase_one_engine_object = FlippingEngine()
-        phase_one_engine_object.flip_generator(request, image_property_id)
+        phase_one_engine_object = BlippingEngine()
+        phase_one_engine_object.blip_generator(request, image_property_id)
         #phase one tracker
         user_info = userProfile.objects.all()
         advertiser_info = AdvertiserProfile.objects.all()

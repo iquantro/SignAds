@@ -5,8 +5,8 @@ from AdRecords.models import Image
 import json
 from django.template import loader
 
-class FlippingEngine:
-    def flip_generator(self, request, image_property_id):
+class BlippingEngine:
+    def blip_generator(self, request, image_property_id):
         global image_engine_path_json
         image_engine_path_json = "E:/SignAds/AdEngine/paths.json"
         global advertiser, logo_description, advertiser_desc
