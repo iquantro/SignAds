@@ -89,7 +89,7 @@ GET /api/v1/FetchAsset
 Data:
 
 Advertiser: <advertiser name previously registered>
-user_email: <advertiser email>
+user_email: <user email previously registered>
 
 ~~~
 
