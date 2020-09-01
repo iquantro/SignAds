@@ -8,7 +8,7 @@ from django.template import loader
 class BlippingEngine:
     def blip_generator(self, request, image_property_id):
         global image_engine_path_json
-        image_engine_path_json = "E:/SignAds/AdEngine/paths.json"
+        image_engine_path_json = "/home/nithin/Startup/SignAds/AdEngine/paths.json"
         global advertiser, logo_description, advertiser_desc
         global dest, img_name
         with open(image_engine_path_json, "r") as rf:
