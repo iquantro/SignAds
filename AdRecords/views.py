@@ -7,6 +7,7 @@ from .models import Image, Text
 from django.http import JsonResponse
 from .helpers import MultipleFiles
 from AdEngine.Engine import Engine
+from NeuralNetEngine.generate import TextGen
 
 class ImageView(APIView):
     parser_classes = (MultiPartParser, FormParser)
@@ -22,11 +23,11 @@ class ImageView(APIView):
             if image_serializer.is_valid():
                 image_serializer.save()
                 arr.append(image_serializer.data)
-                phase_one_status = Engine()
-                phase_one_engine_status = phase_one_status.phase_one_engine(request, image_property_id)
+                phase_status = Engine()
+                phase_one_engine_status = phase_status.phase_one_engine(request, image_property_id)
                 if phase_one_engine_status:
                     print("Phase one engine successfully executed...")
-                phase_two_engine_status = phase_one_status.phase_two_engine(request, image_property_id)
+                phase_two_engine_status = phase_status.phase_two_engine(request, image_property_id)
                 if phase_two_engine_status:
                     print("Phase two engine successfully executed...")
             else:
@@ -56,6 +57,10 @@ class TextView(APIView):
         if text_serializer.is_valid():
             text_serializer.save()
             arr.append(text_serializer.data)
+            phase_three_status = Engine()
+            phase_three_engine_status = phase_three_status.phase_three_engine(request, text_property_id)
+            if phase_three_engine_status:
+                print("Phase three engine successfully executed...")
         else:
             flag = 0
         if flag == 1:

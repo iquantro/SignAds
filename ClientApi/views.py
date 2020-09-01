@@ -1,10 +1,10 @@
 from rest_framework.views import APIView
-from django.shortcuts import render
+from .asset_engine import AssetEngine
 
 
-class AdService(APIView):
+class FetchAsset(APIView):
 
     def get(self, request):
-        Advertiser = request.POST.get('Advertiser')
-        Adpath = "{0}/Phase1/demo.html".format(Advertiser)
-        return render(request, Adpath)
+        fetch_asset_object = AssetEngine()
+        response = fetch_asset_object.asset_process(request)
+        return response

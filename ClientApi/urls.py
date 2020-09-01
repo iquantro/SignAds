@@ -1,6 +1,6 @@
 from django.conf.urls import url
-from .views import AdService
+from .views import FetchAsset
 
 urlpatterns = [
-    url(r'^Adservice', AdService.as_view(), name='ClientApi'),
+    url(r'^FetchAsset', FetchAsset.as_view(), name='FetchAsset'),
 ]

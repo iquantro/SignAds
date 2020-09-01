@@ -47,7 +47,7 @@ class VideoEngine:
         BackImg.save(video_engine_path + advertiser + '.jpg', quality=95)
         print("image created")
 
-        save_dir = os.path.join(media_path_out + advertiser, "phase2")
+        save_dir = os.path.join(media_path_out + advertiser, "Phase2")
         os.mkdir(save_dir)
 
         cmd = "ffmpeg -loop 1 -i {0} -i ".format(

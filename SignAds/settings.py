@@ -44,7 +44,8 @@ INSTALLED_APPS = [
     'rest_framework',
     'ClientApi',
     'AdAssets',
-    'Video_Engine'
+    'Video_Engine',
+    'NeuralNetEngine'
 ]
 
 MIDDLEWARE = [
@@ -118,7 +119,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Calcutta'
 
 USE_I18N = True
 
