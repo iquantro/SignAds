@@ -22,7 +22,7 @@ class AssetEngine:
             phase_two_object = PhaseTwo()
             phase_two_object.get(request)
             phase_save_object = Phasesave()
-            phase_save_object.phase_save(phase_position_str, user_val, advertiser_val)
+            phase_save_object.phase_save("Phase-2", user_val, advertiser_val)
         else:
             return HttpResponse("Phase one asset not yet retrieved...")
         #Phase three asset fetching
@@ -30,7 +30,7 @@ class AssetEngine:
             phase_three_object = PhaseThree()
             phase_three_object.get(request)
             phase_save_object = Phasesave()
-            phase_save_object.phase_save(phase_position_str, user_val, advertiser_val)
+            phase_save_object.phase_save("Phase-3", user_val, advertiser_val)
         else:
             return HttpResponse("Phase two asset not yet retrieved but Phase one retrieved...")
         #When all three phases are fetched by client
