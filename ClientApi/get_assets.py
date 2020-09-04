@@ -7,7 +7,7 @@ from django.http import FileResponse
 class PhaseOne:
 
     def get(self, advertiser_val, file_dest):
-        adpath = "C:/Users/Akash/PycharmProjects/SignAds/AdAssets/{0}/Phase1".format(advertiser_val) #make sure to change path
+        adpath = "/home/nithin/Startup/SignAds/AdAssets/{0}/Phase1".format(advertiser_val) #make sure to change path
         file_name = "{0}".format(advertiser_val)
         if path.exists(adpath):
             #place client destination directory in make_archive.
