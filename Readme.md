@@ -5,3 +5,19 @@ A B2B SaaS platform where ads will be crafted such that user click rate and inte
 The platform is primarily based on our proprietary persuasion algorithm.
 
 For the list of various APIs that have been implemented, please refer APIs.md file.
+
+For executing server code please execute the following steps on your command console:
+
+~~~
+python manage.py makemigrations
+python manage.py migrate --run-syncdb
+python manage.py runserver <port-number>
+~~~
+
+Note: Also please make sure that 
+~~~ 
+db.sqlite and other migration files 
+~~~ 
+are deleted before each time the server starts running for demo purposes.
+
+After future releases, such conflicts will be resolved.
