@@ -90,7 +90,7 @@ Data:
 
 Advertiser: <advertiser name previously registered>
 user_email: <user email previously registered>
-
+file_path: <file path on the client side>
 ~~~
 
 ###### _Retrieve phase Profile_
