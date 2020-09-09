@@ -3,7 +3,7 @@ from PIL import Image
 from PIL import ImageDraw, ImageFont
 from AdRecords.models import Image as dbImg
 import json
-
+import os
 
 class VideoEngine:
     global img_name
@@ -14,7 +14,9 @@ class VideoEngine:
     def converter(self, image_property_id, advertiser, advertiser_desc):
         capture_time = 15
         video_fps = 20
-        image_engine_path_json = '/home/nithin/Startup/SignAds/Video_Engine/paths.json'
+        file = os.path.join(os.getcwd(), os.listdir(os.getcwd())[0]).replace("\\", '/')
+        base_path = file.strip("/.git")
+        image_engine_path_json = base_path+'/Video_Engine/paths.json'
         with open(image_engine_path_json, "r") as rf:
             paths = json.load(rf)
 

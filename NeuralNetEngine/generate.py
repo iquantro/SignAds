@@ -8,6 +8,7 @@ from AdRecords.models import Image
 from accounts.models import AdvertiserProfile
 from distutils.dir_util import copy_tree
 import shutil
+import os
 
 
 class TextGen:
@@ -20,8 +21,9 @@ class TextGen:
         # Generate text using the model. Verbose set to False to prevent logging generated sequences.
         generated = [str(prompt) for prompt in model.generate(prompts, verbose=False)][0]
         final_generated_txt = ['.'.join(generated[0].split('.')[:-1]) + '.'][0]
-
-        image_engine_path_json = "/home/nithin/Startup/SignAds/AdEngine/paths.json"
+        file = os.path.join(os.getcwd(), os.listdir(os.getcwd())[0]).replace("\\", '/')
+        base_path = file.strip("/.git")
+        image_engine_path_json = base_path+"/AdEngine/paths.json"
         with open(image_engine_path_json, "r") as rf:
             paths = json.load(rf)
         dest = paths['paths']['asset_destination_path']

@@ -4,11 +4,14 @@ from accounts.models import AdvertiserProfile
 from AdRecords.models import Image
 import json
 from django.template import loader
+import os
 
 class BlippingEngine:
     def blip_generator(self, request, image_property_id):
         global image_engine_path_json
-        image_engine_path_json = "/home/nithin/Startup/SignAds/AdEngine/paths.json"
+        file = os.path.join(os.getcwd(), os.listdir(os.getcwd())[0]).replace("\\", '/')
+        base_path = file.strip("/.git")
+        image_engine_path_json = base_path+"/AdEngine/paths.json"
         global advertiser, logo_description, advertiser_desc
         global dest, img_name
         with open(image_engine_path_json, "r") as rf:
