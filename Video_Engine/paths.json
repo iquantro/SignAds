@@ -1,11 +1,11 @@
   {
     "paths": {
-      "media_dir_path": "/home/nithin/Startup/SignAds/media/",
+      "media_dir_path": "/media/",
       "relative_assets_dir_path": "assets/",
-      "asset_destination_path": "/home/nithin/Startup/SignAds/AdRecords/templates/AdTemplates/demo/assets/",
+      "asset_destination_path": "/AdRecords/templates/AdTemplates/demo/assets/",
       "relative_template_html_file_path": "AdTemplates/demo/demo.html",
       "relative_template_dir_path": "AdRecords/templates/AdTemplates/demo",
-      "media_path_out": "/home/nithin/Startup/SignAds/AdAssets/",
-      "VideoEngine_path": "/home/nithin/Startup/SignAds/Video_Engine/"
+      "media_path_out": "/AdAssets/",
+      "VideoEngine_path": "/Video_Engine/"
     }
   }

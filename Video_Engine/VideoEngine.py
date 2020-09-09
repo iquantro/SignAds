@@ -23,8 +23,8 @@ class VideoEngine:
         image_id_info = dbImg.objects.filter(image_property_id=image_property_id)
         img_name = [str(image_val.image) for image_val in image_id_info][0]
 
-        media_path_in = paths['paths']['media_dir_path']
-        media_path_out = paths['paths']['media_path_out']
+        media_path_in = base_path+paths['paths']['media_dir_path']
+        media_path_out = base_path+paths['paths']['media_path_out']
 
         img1 = Image.open('Video_Engine/background.jpg')
         img2 = Image.open(media_path_in + img_name)
@@ -45,7 +45,7 @@ class VideoEngine:
         color = 'rgb(0, 128, 255)'  # white color
         draw.text((x, y), name, fill=color, font=font)
 
-        video_engine_path = paths['paths']['VideoEngine_path']
+        video_engine_path = base_path+paths['paths']['VideoEngine_path']
         BackImg.save(video_engine_path + advertiser + '.jpg', quality=95)
         print("image created")
 

@@ -26,8 +26,8 @@ class TextGen:
         image_engine_path_json = base_path+"/AdEngine/paths.json"
         with open(image_engine_path_json, "r") as rf:
             paths = json.load(rf)
-        dest = paths['paths']['asset_destination_path']
-        media_path = paths['paths']['media_dir_path']
+        dest = base_path+paths['paths']['asset_destination_path']
+        media_path = base_path+paths['paths']['media_dir_path']
         asset_path_str = paths['paths']['relative_assets_dir_path']
         ad_info = AdvertiserProfile.objects.all()
         image_id_info = Image.objects.filter(image_property_id=text_property_id) #image and text property id should be the same

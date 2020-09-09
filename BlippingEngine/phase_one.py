@@ -16,8 +16,8 @@ class BlippingEngine:
         global dest, img_name
         with open(image_engine_path_json, "r") as rf:
             paths = json.load(rf)
-        dest = paths['paths']['asset_destination_path']
-        media_path = paths['paths']['media_dir_path']
+        dest = base_path+paths['paths']['asset_destination_path']
+        media_path = base_path+paths['paths']['media_dir_path']
         asset_str = paths['paths']['relative_assets_dir_path']
         image_path_list = []
         image_description_list = []
