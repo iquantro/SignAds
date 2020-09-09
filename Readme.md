@@ -20,4 +20,6 @@ db.sqlite and other migration files
 ~~~ 
 are deleted before each time the server starts running for demo purposes.
 
+Also please make sure that all the respective paths are set properly according to your system.
+
 After future releases, such conflicts will be resolved.
