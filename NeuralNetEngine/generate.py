@@ -17,9 +17,9 @@ class TextGen:
         transformers_logger = logging.getLogger("transformers")
         transformers_logger.setLevel(logging.WARNING)
         model = LanguageGenerationModel("gpt2", "gpt2", args={"length": 256}, use_cuda=False)
-        prompts = ["{0}".format(text_val)]
+        prompts = "{0}".format(text_val)
         # Generate text using the model. Verbose set to False to prevent logging generated sequences.
-        generated = [str(prompt) for prompt in model.generate(prompts, verbose=False)][0]
+        generated = model.generate(prompts, verbose=False)
         final_generated_txt = ['.'.join(generated[0].split('.')[:-1]) + '.'][0]
         file = os.path.join(os.getcwd(), os.listdir(os.getcwd())[0]).replace("\\", '/')
         base_path = file.strip("/.git")
