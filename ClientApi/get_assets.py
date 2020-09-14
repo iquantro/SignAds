@@ -52,9 +52,10 @@ class PhaseThree:
         adpath = "/"+base_path+"/AdAssets/{0}/Phase3".format(advertiser_val)  #make sure to change path
         file_name = "{0}".format(advertiser_val)
         if path.exists(adpath):
-            path_to_zip = make_archive(file_dest+"_3", "zip", adpath)
-            response = HttpResponse(FileWrapper(open(path_to_zip, 'rb')), content_type='application/zip')
-            response['Content-Disposition'] = 'attachment; filename="{filename}.zip"'.format(filename=file_name)
+            path_to_zip = make_archive(file_name, "zip", adpath)
+            file = FileWrapper(open(path_to_zip, 'rb'))
+            response = HttpResponse(file, content_type='application/zip')
+            response['Content-Disposition'] = 'attachment; filename="{0}.zip"'.format(file_name)
             return response
         else:
             print("File path error...")
