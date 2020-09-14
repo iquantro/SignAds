@@ -35,6 +35,6 @@ class FetchAsset(APIView):
             return response
 
         else:
-            return HttpResponse("error")
+            return HttpResponse("Error in retrieving phase...")
 
 
