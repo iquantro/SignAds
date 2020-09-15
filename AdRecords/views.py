@@ -30,10 +30,10 @@ class ImageView(APIView):
                     if phase_one_engine_status:
                         api_logger.info("Phase one engine successfully executed...")
                         api_logger.info("Phase two engine to begin...")
-                    phase_two_engine_status = phase_status.phase_two_engine(request, image_property_id)
-                    if phase_two_engine_status:
-                        api_logger.info("Phase two engine successfully executed...")
-                        api_logger.info("Upload text for execution of Phase 3...")
+                    #phase_two_engine_status = phase_status.phase_two_engine(request, image_property_id)
+                    #if phase_two_engine_status:
+                    #    api_logger.info("Phase two engine successfully executed...")
+                    #    api_logger.info("Upload text for execution of Phase 3...")
                 else:
                     flag = 0
             if flag == 1:
@@ -73,10 +73,10 @@ class TextView(APIView):
             if text_serializer.is_valid():
                 text_serializer.save()
                 arr.append(text_serializer.data)
-                phase_three_status = Engine()
-                phase_three_engine_status = phase_three_status.phase_three_engine(request, text_property_id)
-                if phase_three_engine_status:
-                    api_logger.info("Phase three has been successfully executed...")
+                #phase_three_status = Engine()
+                #phase_three_engine_status = phase_three_status.phase_three_engine(request, text_property_id)
+                #if phase_three_engine_status:
+                #    api_logger.info("Phase three has been successfully executed...")
             else:
                 flag = 0
             if flag == 1:
