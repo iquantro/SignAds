@@ -50,7 +50,8 @@ class AdvertiserView(APIView):
         try:
             all_advertiser_data = AdvertiserProfile.objects.all()
             serializer = advertiserProfileSerializer(all_advertiser_data, many=True)
-            api_logger.info("Advertiser profile: " + str(serializer.data))
+            api_logger.info("Retrieving advertiser data...")
+            api_logger.info("Advertiser data..."+str(serializer.data))
             return Response(serializer.data)
 
         except Exception as e:
