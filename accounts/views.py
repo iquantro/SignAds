@@ -34,11 +34,13 @@ class UserView(APIView):
                 serializer = userProfileSerializer(user_data)
                 api_logger.info("User_data: " + str(serializer.data))
                 return Response(serializer.data, status=status.HTTP_201_CREATED)
+            else:
+                api_logger.error("Error in user data..." + str(serializer.errors))
+                return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
         except Exception as e:
-            api_logger.error("User_data: " + str(serializer.errors))
             api_logger.exception(str(e))
-            return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
 
 
 class AdvertiserView(APIView):
@@ -65,11 +67,13 @@ class AdvertiserView(APIView):
                 serializer = advertiserProfileSerializer(advertiser_data)
                 api_logger.info("Advertiser profile: " + str(serializer.data))
                 return Response(serializer.data, status=status.HTTP_201_CREATED)
+            else:
+                api_logger.error("Advertiser profile: " + str(serializer.data))
+                return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
         except Exception as e:
-            api_logger.error("User_data: " + str(serializer.errors))
             api_logger.exception(str(e))
-            return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
 
 
 class PhaseView(APIView):
