@@ -11,8 +11,7 @@ class BlippingEngine:
     def blip_generator(self, request, image_property_id):
         try:
             global image_engine_path_json
-            file = os.path.join(os.getcwd(), os.listdir(os.getcwd())[0]).replace("\\", '/')
-            base_path = file.strip("/.git")
+            base_path = os.getcwd()
             image_engine_path_json = "/"+base_path+"/AdEngine/paths.json"
             global advertiser, logo_description, advertiser_desc
             global dest, img_name

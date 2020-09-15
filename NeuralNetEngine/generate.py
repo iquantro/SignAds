@@ -20,8 +20,7 @@ class TextGen:
             generated = model.generate(prompts, verbose=False)
             final_generated_txt = ['.'.join(generated[0].split('.')[:-1]) + '.'][0]
             api_logger.info("Generated emotional text..."+str(final_generated_txt))
-            file = os.path.join(os.getcwd(), os.listdir(os.getcwd())[0]).replace("\\", '/')
-            base_path = file.strip("/.git")
+            base_path = os.getcwd()
             image_engine_path_json = "/"+base_path+"/AdEngine/paths.json"
             with open(image_engine_path_json, "r") as rf:
                 paths = json.load(rf)

@@ -16,8 +16,8 @@ class VideoEngine:
         try:
             capture_time = 15
             video_fps = 20
-            file = os.path.join(os.getcwd(), os.listdir(os.getcwd())[0]).replace("\\", '/')
-            base_path = file.strip("/.git")
+            file = os.getcwd()
+            base_path = file
             image_engine_path_json = "/"+base_path+'/Video_Engine/paths.json'
             with open(image_engine_path_json, "r") as rf:
                 paths = json.load(rf)
